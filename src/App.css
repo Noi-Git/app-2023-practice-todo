@@ -4,6 +4,10 @@
   height: 100vh;
 }
 
+.app-header {
+  padding: 40px 0;
+}
+
 .app-main {
   width: 80%;
   margin: 0 auto;
