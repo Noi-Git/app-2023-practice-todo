@@ -93,3 +93,7 @@ width: 80%;
   border: none;
   cursor: pointer;
 }
+
+.edit-input {
+  font-size: 1.1rem;
+}

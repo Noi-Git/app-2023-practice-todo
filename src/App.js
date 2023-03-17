@@ -12,6 +12,16 @@ function App() {
     setTodos(updatedTodo)
   }
 
+  const editTodo = (id, newTodoTitle) => {
+    const updatedTodo = todos.map((todo) => {
+      if (todo.id == id) {
+        return { ...todo, todoTitle: newTodoTitle }
+      }
+      return todo
+    })
+    setTodos(updatedTodo)
+  }
+
   const deleteTodo = (id) => {
     const updatedTodo = todos.filter((todo) => {
       return id !== todo.id
@@ -22,7 +32,7 @@ function App() {
   return (
     <div className='App'>
       <TodoCreate onCreate={createTodo} />
-      <TodoList todos={todos} onDelete={deleteTodo} />
+      <TodoList todos={todos} onDelete={deleteTodo} onEdit={editTodo} />
     </div>
   )
 }
