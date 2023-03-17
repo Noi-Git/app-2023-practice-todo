@@ -25,7 +25,7 @@ const TodoItem = ({ todo, onDelete, onEdit }) => {
   return (
     <div className='todo-items'>
       <ul className='todo-item'>
-        {/* <li className='todo-title'>{todo.todoTitle}</li> */}
+        {/* {!todo.todoTitle && <h1>You do not have item todo</h1>} */}
         {content}
         <button className='edit-button' onClick={handleEditClick}>
           Edit
