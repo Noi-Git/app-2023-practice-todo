@@ -16,8 +16,8 @@ const TodoCreate = ({ onCreate }) => {
   }
 
   return (
-    <div className='app-main'>
-      <h1 className='app-header'>Add Todos</h1>
+    <div className='create-main'>
+      <h1 className='app-header'>TODOS</h1>
       <form className='app-todo' onSubmit={handleSubmit}>
         <div className='input-field'>
           <input
