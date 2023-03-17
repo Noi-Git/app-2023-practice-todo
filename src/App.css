@@ -1,10 +1,14 @@
 .App {
   text-align: center;
-  background-color: green;
+  /* background-color: green; */
   height: 100vh;
 }
 
-.app-main {
+.app-header {
+  padding: 40px 0;
+}
+
+.create-main {
   width: 80%;
   margin: 0 auto;
 }
@@ -28,20 +32,68 @@
 
 .todo-input {
   padding: 20px 20px;
+  font-size: 1.2rem;
   width: 60vw;
 }
 
 .todo-button {
   padding: 20px 20px;
-  /* width: 60vw; */
+  font-size: 1.2rem;
 }
 
 /* ==== list ==== */
+.list-main {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .todo-list {
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin: 0 auto;
-  padding: 40px;
+  padding: 30px 0;
+
   background-color: rgb(167, 202, 238);
+}
+
+.todo-items {
+  background-color: rgb(237, 240, 244);
+  width: 80%;
+  margin: 5px auto;
+  border: 1px solid rgb(78, 155, 232);
+  box-shadow: 2px 2px 2px rgb(78, 155, 232);
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.todo-title {
+list-style-type: none;
+width: 80%;
+}
+
+.edit-button {
+  margin-right: 20px;
+  padding: 0 20px;
+  background-color: rgb(49, 148, 49);
+  color: rgb(237, 240, 244);
+  border: none;
+  cursor: pointer;
+}
+
+.delete-button {
+  margin-right: 20px;
+  padding: 0 20px;
+  background-color: rgb(232, 35, 35);
+  color: rgb(237, 240, 244);
+  border: none;
+  cursor: pointer;
+}
+
+.edit-input {
+  font-size: 1.1rem;
 }
