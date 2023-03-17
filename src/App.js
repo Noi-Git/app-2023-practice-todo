@@ -14,7 +14,7 @@ function App() {
 
   const editTodo = (id, newTodoTitle) => {
     const updatedTodo = todos.map((todo) => {
-      if (todo.id == id) {
+      if (todo.id === id) {
         return { ...todo, todoTitle: newTodoTitle }
       }
       return todo

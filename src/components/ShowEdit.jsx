@@ -19,6 +19,7 @@ const ShowEdit = ({ todo, onEditSubmit }) => {
         type='text'
         onChange={handleShowEditChange}
         value={newEditTitle}
+        // put cursor at the end of input text
         ref={(ref) => ref && ref.focus()}
         onFocus={(e) =>
           e.currentTarget.setSelectionRange(
